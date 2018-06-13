@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FelipeT66 Portifólio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</head>
+<body><br>
+  <section class="section">
+    <div class="container" align="center">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card text-center">
+            <div class="card-header">
+              <h1>
+                <span data-js="company-name"></span>-
+                <span data-js="company-phone"></span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><br>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <!-- form user info -->
+          <div class="card card-outline-secondary">
+              <div class="card-header">
+                  <h3 class="mb-0">Inserir imagens</h3>
+              </div>
+              <div class="card-body">
+                  <form class="form" role="form" autocomplete="off" data-js="form-register">
+                      <div class="form-group row">
+                          <label class="col-lg-3 col-form-label form-control-label">Imagem</label>
+                          <div class="col-lg-9">
+                              <input class="form-control" type="text" data-js="image" required placeholder="url">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label class="col-lg-3 col-form-label form-control-label">Titulo</label>
+                          <div class="col-lg-9">
+                              <input class="form-control" type="text" data-js="title" required>
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label class="col-lg-3 col-form-label form-control-label">Descrição</label>
+                          <div class="col-lg-9">
+                              <input class="form-control" type="text" placeholder="(opcional)" data-js="description">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label class="col-lg-3 col-form-label form-control-label"></label>
+                          <div class="col-lg-9">
+                              <input type="reset" class="btn btn-danger" value="Limpar" data-js="btnLimpar">
+                              <input type="submit" class="btn btn-primary" value="Cadastrar">
+                          </div>
+                      </div>
+                  </form>
+              </div><!--card body-->
+          </div><!-- card top --><br>
+          <h5 class="white">
+              <p>Conteudo:</p>
+              <li>Manipulação do DOM</li>
+              <li>XMLHttpRequest</li>
+              <li>Modularização de código</li>
+              <li>Bootstrap</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <p>https://github.com/felipet66/bookimage.git</p>
+          </h5>
+        </div><!-- col lg -->
+        <div class="col-lg-7">
+          <div class="card card-outline-secondary">
+            <div class="card-header">
+                <h3 class="mb-0">Portifólio</h3>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Imagem</th>
+                      <th>Titulo</th>
+                      <th>Descrição</th>
+                      <th>Ação</th>
+                    </tr>
+                  </thead>
+                  <tbody data-js="table-car">
+                  </tbody>
+                </table>
+              </div><!-- table responsive div-->
+            </div>
+          </div>
+        </div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section>
+  <script src="js/dom.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
